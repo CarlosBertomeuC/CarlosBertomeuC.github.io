@@ -1,5 +1,4 @@
-.rojo{
+.fondo{
+    background-image: url(img/fondo.jpg);
     background-color: red;
-    min-height: 100vh;
-    max-width: 100vw;
 }
