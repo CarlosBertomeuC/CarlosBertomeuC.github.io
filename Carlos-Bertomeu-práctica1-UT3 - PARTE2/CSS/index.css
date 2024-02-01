@@ -1,12 +1,4 @@
 <<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif
-}
-
-
 main>section>form {
     min-height: 30vh;
     max-width: 30vh;
@@ -20,21 +12,12 @@ main>section>form {
     box-shadow: 5px 5px rgba(0, 0, 0, .7)
 }
 
-
 .EstiloBotones {
     background-color: #808080;
     color: #f0f8ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 15px;
     padding: 10px 40px
-}
-
-
-h2 {
-    border-bottom: 3px solid #808080;
-    color: #808080;
-    margin-bottom: 20px;
-    text-align: center
 }
 
 article {
@@ -45,20 +28,22 @@ article {
     border-radius: 10px
 }
 
-a {
-    color: #000;
-    text-decoration: none
-}
-
-input {
-    border: none;
-    background: none;
-    border-bottom: 3px solid #000;
-    margin: 10px 0 10px
-}
-
 .contraseña {
     text-align: center
+}
+
+.registro-formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px
+}
+
+.campo-formulario {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .tooltip {
@@ -80,28 +65,33 @@ input {
 }
 
 .tooltip:hover .tooltip-texto {
-    visibility: visible
+    visibility: visible;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
 
-.registro-formulario {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px
-}
+@keyframes myanimation {
+    0% {
+        opacity: 0%
+    }
 
-.campo-formulario {
-    margin-bottom: 15px
+    25% {
+        opacity: 50%
+    }
+
+    50% {
+        opacity: 100%
+    }
+
+    75% {
+        opacity: 50%
+    }
+
+    100% {
+        opacity: 0%
+    }
 =======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Oswald', sans-serif
-}
-
-
 main>section>form {
     min-height: 30vh;
     max-width: 30vh;
@@ -115,21 +105,12 @@ main>section>form {
     box-shadow: 5px 5px rgba(0, 0, 0, .7)
 }
 
-
 .EstiloBotones {
     background-color: #808080;
     color: #f0f8ff;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 15px;
     padding: 10px 40px
-}
-
-
-h2 {
-    border-bottom: 3px solid #808080;
-    color: #808080;
-    margin-bottom: 20px;
-    text-align: center
 }
 
 article {
@@ -140,20 +121,20 @@ article {
     border-radius: 10px
 }
 
-a {
-    color: #000;
-    text-decoration: none
-}
-
-input {
-    border: none;
-    background: none;
-    border-bottom: 3px solid #000;
-    margin: 10px 0 10px
-}
-
 .contraseña {
     text-align: center
+}
+
+.registro-formulario {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px
+}
+
+.campo-formulario {
+    margin-bottom: 15px
 }
 
 .tooltip {
@@ -175,18 +156,31 @@ input {
 }
 
 .tooltip:hover .tooltip-texto {
-    visibility: visible
+    visibility: visible;
+    animation-name: myanimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite
 }
 
-.registro-formulario {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px
-}
+@keyframes myanimation {
+    0% {
+        opacity: 0%
+    }
 
-.campo-formulario {
-    margin-bottom: 15px
+    25% {
+        opacity: 50%
+    }
+
+    50% {
+        opacity: 100%
+    }
+
+    75% {
+        opacity: 50%
+    }
+
+    100% {
+        opacity: 0%
+    }
 >>>>>>> b26b33161a83617e7eaef908282cc45ad33ea1f9
 }
