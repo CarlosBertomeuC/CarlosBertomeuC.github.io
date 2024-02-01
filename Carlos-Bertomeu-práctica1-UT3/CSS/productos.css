@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 li>a {
@@ -29,36 +28,4 @@ li>a {
 .polaroid:hover {
     transform: scale(1.1);
     filter: grayscale(0%)
-=======
-
-
-li>a {
-    color: #000;
-    text-decoration: none
-}
-
-.imagenes>a>img {
-    max-width: 33vw;
-    max-height: 60vh;
-    filter: grayscale(100%)
-}
-
-.imagenes {
-    margin: 10px;
-    display: flex;
-    justify-content: space-around
-}
-
-.polaroid {
-    position: relative;
-    transition: transform .2s;
-    background-color: #fff;
-    padding: 10px 10px 50px 10px;
-    border: solid #000 1px
-}
-
-.polaroid:hover {
-    transform: scale(1.1);
-    filter: grayscale(0%)
->>>>>>> b26b33161a83617e7eaef908282cc45ad33ea1f9
 }

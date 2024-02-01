@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .imagenes>a>img {
     max-width: 33vw;
     max-height: 60vh;
@@ -57,64 +56,4 @@
 
 .position-relative {
     position: relative
-=======
-.imagenes>a>img {
-    max-width: 33vw;
-    max-height: 60vh;
-    filter: grayscale(100%)
-}
-
-.imagenes {
-    margin: 10px;
-    display: flex;
-    justify-content: space-around
-}
-
-.polaroid {
-    position: relative;
-    transition: transform .2s;
-    background-color: #fff;
-    padding: 10px 10px 50px 10px;
-    border: solid #000 1px
-}
-
-.polaroid:hover {
-    transform: scale(1.2) rotate(10deg);
-    filter: grayscale(0%)
-}
-
-.oferta {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    display: flex;
-    align-items: center
-}
-
-.estrella {
-    width: 200px;
-    animation: AparecerDesaparecer 1s infinite alternate
-}
-
-.oferta-texto {
-    position: absolute;
-    right: 40%;
-    font-weight: bold;
-    color: #f00;
-    animation: AparecerDesaparecer 1s infinite alternate
-}
-
-@keyframes AparecerDesaparecer {
-    0% {
-        opacity: 100%
-    }
-
-    100% {
-        opacity: 0%
-    }
-}
-
-.position-relative {
-    position: relative
->>>>>>> b26b33161a83617e7eaef908282cc45ad33ea1f9
 }
