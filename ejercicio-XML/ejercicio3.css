@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    color: white;
+    background-color: rgba(33,40,52,255);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+    height: 30vh;
+    width: 100vw;
+}
+
+imagen{
+    background-image: url(bandareal.jpg);
+    background-size: 35vw 30vh;
+    background-repeat: no-repeat;
+
+    width: 35vw;
+    height: 30vh;
+
+    margin: 15px;
+}
+
+textocd {
+    margin-top: 15px;
+    margin-right: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+    font-size: 25px;
+
+    width: 35vw;
+    height: 30vh;
+
+    text-transform: uppercase;
+
+}
+texto{
+    color: grey;
+}
+
+informacion {
+    margin-top: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+    font-size: 25px;
+
+    width: 30vw;
+    height: 30vh;
+}
+
+artista{
+    color: orange;
+}
+
+
+cuerpo{
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 50vh;
+    margin-top: 100px;
+}
+
+nombrecd{
+    color: grey;
+    margin-left: 18px;
+}
+
+informacioncd{
+    display: flex;
+}
+
+numeros{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 1vw;
+}
+
+canciones{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 100vw;
+}
+
+
+
+canciones > *:nth-child(odd) {
+    background-color: rgba(18,22,27,255);
+}
+
+numero{
+    margin-bottom: 10px;
+}
+
+cancion{
+    margin-bottom: 10px;
+}

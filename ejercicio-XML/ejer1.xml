@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Liga>
+    <Equipo>
+        <nombre>Barcelona</nombre>
+        <jugador>Pedri</jugador>
+        <entrenador>Suarez</entrenador>
+    </Equipo>
+    <Equipo>
+        <nombre>Villa Real</nombre>
+        <jugador>Gerard Moreno</jugador>
+        <entrenador>Perez</entrenador>
+    </Equipo>
+    <Equipo>
+        <nombre>Atleti</nombre>
+        <jugador>Koke</jugador>
+        <entrenador>Enrique</entrenador>
+    </Equipo>
+    <Equipo>
+        <nombre>Sevilla</nombre>
+        <jugador>Ocampos</jugador>
+        <entrenador>Montana</entrenador>
+    </Equipo>
+    <Equipo>
+        <nombre>Madrid</nombre>
+        <jugador>Courtois</jugador>
+        <entrenador>Mario</entrenador>
+    </Equipo>
+</Liga>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ejercicio4.css"?>
+
+<caratula>
+    <pelicula>
+        <cabecera>
+            <actor>
+                <nombre>Ewan </nombre>
+                <apellido>McGregor</apellido>
+            </actor>
+            <actor>
+                <nombre>Albert</nombre>
+                <apellido>Finney</apellido>
+            </actor>
+            <actor>
+                <nombre>Billy</nombre>
+                <apellido>Crudup</apellido>
+            </actor>
+            <actor>
+                <nombre>Jessica</nombre>
+                <apellido>Lange</apellido>
+            </actor>
+        </cabecera>
+        <director>
+            <p>Una película de TIM BURTON</p>
+        </director>
+        <frase>
+            <linea>Una aventura tan grande como la vida misma</linea>
+        </frase>
+    </pelicula>
+</caratula>

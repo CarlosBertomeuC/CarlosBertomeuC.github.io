@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ejercicio3.css"?>
+<Disco>
+    <header>
+        <imagen></imagen>
+    
+        <textocd>
+            <texto>Artista:</texto>
+            <texto>Titulo:</texto>
+            <texto>Sello:</texto>
+            <texto>Referencia:</texto>
+            <texto>Año:</texto>
+            <texto>Pais:</texto>
+            <texto>Formato:</texto>
+            <texto>Genero:</texto>
+            <texto>Estilo:</texto>
+            <texto>Observaciones:</texto>
+        </textocd>
+        <informacion>
+            <artista>ABC (2)</artista>
+            <titulo>The collection</titulo>
+            <sello> Doradito</sello>
+            <referencia>551 831-2</referencia>
+            <año>1996</año>
+            <pais>Germany</pais>
+            <formato>CD-Compilation</formato>
+            <genero>Funk / Soul, Electronic</genero>
+            <estilo>Funk Disco,Synth Pop</estilo>
+            <observaciones>Licensed from Mercury Records</observaciones>
+        </informacion>
+    </header>
+    <cuerpo>
+        <nombrecd>CD1</nombrecd>
+        
+        <informacioncd>
+            <numeros>
+                <numero>01</numero>
+                <numero>02</numero>
+                <numero>03</numero>
+                <numero>04</numero>
+                <numero>05</numero>
+            </numeros>
+            <canciones>
+                <cancion>Poison Arrow
+                </cancion>
+                <cancion>The look of Love</cancion>
+                <cancion>Tears are enought</cancion>
+                <cancion>When smokey sings</cancion>
+                <cancion>Vanity Kills</cancion>
+            </canciones>
+        </informacioncd>
+    </cuerpo>
+</Disco>
