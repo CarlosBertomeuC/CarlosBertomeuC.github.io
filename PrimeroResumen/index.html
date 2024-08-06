@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de C# - Primer Año</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/components/prism-csharp.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Ejemplos de C# - Primer Año de Desarrollo Web</h1>
+    </header>
+    <main>
+        <section>
+            <h2>1. Introducción a la Programación con C#</h2>
+            <h3>Conceptos Básicos</h3>
+            <pre>
+<code class="language-csharp">
+// Variables y Tipos de Datos
+int numero = 10;
+double precio = 19.99;
+char letra = 'A';
+bool esVerdadero = true;
+string nombre = "Juan";
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+// Condicionales
+int edad = 20;
+
+if (edad >= 18)
+{
+    Console.WriteLine("Eres mayor de edad.");
+}
+else
+{
+    Console.WriteLine("Eres menor de edad.");
+}
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+// Bucles
+for (int i = 0; i < 5; i++)
+{
+    Console.WriteLine("Valor de i: " + i);
+}
+
+int contador = 0;
+while (contador < 5)
+{
+    Console.WriteLine("Contador: " + contador);
+    contador++;
+}
+</code>
+            </pre>
+            <h3>Funciones (Métodos)</h3>
+            <pre>
+<code class="language-csharp">
+public int Sumar(int a, int b)
+{
+    return a + b;
+}
+
+// Uso del método
+int resultado = Sumar(5, 3);
+Console.WriteLine("Resultado: " + resultado);
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+public int Multiplicar(int a, int b)
+{
+    return a * b;
+}
+
+public double Multiplicar(double a, double b)
+{
+    return a * b;
+}
+
+// Uso de los métodos sobrecargados
+int resultadoInt = Multiplicar(3, 4);
+double resultadoDouble = Multiplicar(2.5, 3.5);
+Console.WriteLine("Resultado Int: " + resultadoInt);
+Console.WriteLine("Resultado Double: " + resultadoDouble);
+</code>
+            </pre>
+            <h3>Buenas Prácticas</h3>
+            <pre>
+<code class="language-csharp">
+// Este método calcula el área de un rectángulo
+public int CalcularAreaRectangulo(int ancho, int alto)
+{
+    return ancho * alto; // Multiplicamos el ancho por el alto
+}
+</code>
+            </pre>
+        </section>
+        
+        <section>
+            <h2>2. Programación Orientada a Objetos (POO)</h2>
+            <h3>Conceptos Básicos</h3>
+            <pre>
+<code class="language-csharp">
+public class Persona
+{
+    public string Nombre { get; set; }
+    public int Edad { get; set; }
+
+    public void Presentarse()
+    {
+        Console.WriteLine("Hola, mi nombre es " + Nombre + " y tengo " + Edad + " años.");
+    }
+}
+
+// Creación y uso de un objeto
+Persona persona = new Persona();
+persona.Nombre = "Juan";
+persona.Edad = 30;
+persona.Presentarse();
+</code>
+            </pre>
+            <h3>Principios de POO</h3>
+            <h4>Encapsulamiento</h4>
+            <pre>
+<code class="language-csharp">
+public class CuentaBancaria
+{
+    private double saldo;
+
+    public double ObtenerSaldo()
+    {
+        return saldo;
+    }
+
+    public void Depositar(double cantidad)
+    {
+        if (cantidad > 0)
+        {
+            saldo += cantidad;
+        }
+    }
+
+    public void Retirar(double cantidad)
+    {
+        if (cantidad > 0 && saldo >= cantidad)
+        {
+            saldo -= cantidad;
+        }
+    }
+}
+</code>
+            </pre>
+            <h4>Herencia</h4>
+            <pre>
+<code class="language-csharp">
+public class Animal
+{
+    public string Nombre { get; set; }
+
+    public void Comer()
+    {
+        Console.WriteLine(Nombre + " está comiendo.");
+    }
+}
+
+public class Perro : Animal
+{
+    public void Ladrar()
+    {
+        Console.WriteLine(Nombre + " está ladrando.");
+    }
+}
+
+// Uso de la herencia
+Perro perro = new Perro();
+perro.Nombre = "Rex";
+perro.Comer();
+perro.Ladrar();
+</code>
+            </pre>
+            <h4>Polimorfismo</h4>
+            <pre>
+<code class="language-csharp">
+public class Vehiculo
+{
+    public virtual void Conducir()
+    {
+        Console.WriteLine("Conduciendo un vehículo.");
+    }
+}
+
+public class Coche : Vehiculo
+{
+    public override void Conducir()
+    {
+        Console.WriteLine("Conduciendo un coche.");
+    }
+}
+
+public class Moto : Vehiculo
+{
+    public override void Conducir()
+    {
+        Console.WriteLine("Conduciendo una moto.");
+    }
+}
+
+// Uso del polimorfismo
+Vehiculo miVehiculo1 = new Coche();
+Vehiculo miVehiculo2 = new Moto();
+miVehiculo1.Conducir();
+miVehiculo2.Conducir();
+</code>
+            </pre>
+            <h4>Abstracción</h4>
+            <pre>
+<code class="language-csharp">
+public abstract class Figura
+{
+    public abstract double CalcularArea();
+}
+
+public class Circulo : Figura
+{
+    public double Radio { get; set; }
+
+    public override double CalcularArea()
+    {
+        return Math.PI * Radio * Radio;
+    }
+}
+
+public class Rectangulo : Figura
+{
+    public double Ancho { get; set; }
+    public double Alto { get; set; }
+
+    public override double CalcularArea()
+    {
+        return Ancho * Alto;
+    }
+}
+
+// Uso de la abstracción
+Figura miCirculo = new Circulo { Radio = 5 };
+Figura miRectangulo = new Rectangulo { Ancho = 4, Alto = 6 };
+Console.WriteLine("Área del círculo: " + miCirculo.CalcularArea());
+Console.WriteLine("Área del rectángulo: " + miRectangulo.CalcularArea());
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>3. Manipulación de Datos</h2>
+            <h3>Arreglos (Arrays)</h3>
+            <pre>
+<code class="language-csharp">
+int[] numeros = { 1, 2, 3, 4, 5 };
+for (int i = 0; i < numeros.Length; i++)
+{
+    Console.WriteLine("Número: " + numeros[i]);
+}
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+int[] numeros = { 5, 3, 8, 1, 2 };
+Array.Sort(numeros);
+foreach (int numero in numeros)
+{
+    Console.WriteLine("Número: " + numero);
+}
+
+int indice = Array.IndexOf(numeros, 3);
+Console.WriteLine("Índice de 3: " + indice);
+</code>
+            </pre>
+            <h3>Listas y Colecciones</h3>
+            <pre>
+<code class="language-csharp">
+List<string> nombres = new List<string>();
+nombres.Add("Juan");
+nombres.Add("Ana");
+nombres.Add("Luis");
+
+foreach (string nombre in nombres)
+{
+    Console.WriteLine("Nombre: " + nombre);
+}
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+Dictionary<int, string> diccionario = new Dictionary<int, string>();
+diccionario.Add(1, "Uno");
+diccionario.Add(2, "Dos");
+
+foreach (KeyValuePair<int, string> entrada in diccionario)
+{
+    Console.WriteLine("Clave: " + entrada.Key + ", Valor: " + entrada.Value);
+}
+
+Queue<string> cola = new Queue<string>();
+cola.Enqueue("Primero");
+cola.Enqueue("Segundo");
+Console.WriteLine("Elemento en la cabeza de la cola: " + cola.Peek());
+
+Stack<string> pila = new Stack<string>();
+pila.Push("Primero");
+pila.Push("Segundo");
+Console.WriteLine("Elemento en la cima de la pila: " + pila.Peek());
+</code>
+            </pre>
+            <h3>Manipulación de Cadenas (Strings)</h3>
+            <pre>
+<code class="language-csharp">
+string texto = "Hola, mundo!";
+string subcadena = texto.Substring(0, 5); // "Hola,"
+int indice = texto.IndexOf("mundo"); // 6
+string reemplazo = texto.Replace("mundo", "C#"); // "Hola, C#"
+string[] palabras = texto.Split(' '); // ["Hola,", "mundo!"]
+
+Console.WriteLine("Subcadena: " + subcadena);
+Console.WriteLine("Índice de 'mundo': " + indice);
+Console.WriteLine("Reemplazo: " + reemplazo);
+Console.WriteLine("Primera palabra: " + palabras[0]);
+</code>
+            </pre>
+            <pre>
+<code class="language-csharp">
+string nombre = "Juan";
+int edad = 30;
+string mensaje = $"Mi nombre es {nombre} y tengo {edad} años.";
+Console.WriteLine(mensaje);
+</code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ejemplos de C# para Primer Año de Desarrollo Web</p>
+    </footer>
+</body>
+</html>
