@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de HTML y CSS - Curso 2023/2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resumen de HTML y CSS - Curso 2023/2024</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Maquetación: Flexbox</h2>
+            <p>Flexbox es un modelo de diseño unidimensional que permite alinear y distribuir espacio entre los elementos en un contenedor, incluso cuando su tamaño es desconocido y/o dinámico.</p>
+            <pre>
+<code class="language-css">
+/* Ejemplo básico de Flexbox */
+.container {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    height: 100vh;
+}
+
+.item {
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Propiedades de Texto</h2>
+            <p>Las propiedades de texto permiten personalizar la apariencia del texto en una página web, incluyendo el tamaño, color, alineación, y más.</p>
+            <pre>
+<code class="language-css">
+/* Propiedades de texto */
+h1 {
+    font-size: 2em; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto */
+    color: #333; /* Color del texto */
+}
+
+p {
+    line-height: 1.6; /* Altura de línea */
+    text-transform: uppercase; /* Transformación del texto */
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Modelo de Cajas (Box Model)</h2>
+            <p>El modelo de cajas en CSS describe el diseño y el espacio que rodea a los elementos HTML.</p>
+            <pre>
+<code class="language-css">
+/* Ejemplo del Modelo de Cajas */
+.box {
+    width: 300px; /* Ancho */
+    padding: 20px; /* Espaciado interno */
+    border: 2px solid #000; /* Borde */
+    margin: 10px; /* Espaciado externo */
+    background-color: #f0f0f0; /* Color de fondo */
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Colores y Fondos</h2>
+            <p>CSS permite establecer colores y fondos para elementos, utilizando valores de color, imágenes, y gradientes.</p>
+            <pre>
+<code class="language-css">
+/* Colores y fondos */
+body {
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+div {
+    background-image: url('imagen.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Tamaño de la imagen */
+    background-repeat: no-repeat; /* Sin repetición */
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Animaciones</h2>
+            <p>CSS permite crear animaciones para hacer que los elementos cambien de estilo de forma gradual.</p>
+            <pre>
+<code class="language-css">
+/* Ejemplo de animación en CSS */
+@keyframes mover {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+.elemento {
+    animation: mover 2s infinite; /* Aplicación de la animación */
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Media Queries</h2>
+            <p>Las media queries permiten aplicar estilos específicos según las características del dispositivo, como el tamaño de la pantalla.</p>
+            <pre>
+<code class="language-css">
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a diseño vertical */
+    }
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Etiquetas de Texto</h2>
+            <p>Las etiquetas de texto en HTML estructuran y definen el contenido textual en la página web.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de etiquetas de texto -->
+<h1>Título Principal</h1>
+<p>Este es un párrafo. <strong>Texto en negrita.</strong> <em>Texto en cursiva.</em></p>
+<a href="#">Enlace</a>
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Listas</h2>
+            <p>Las listas permiten organizar elementos en una estructura secuencial o no secuencial.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de listas -->
+<ul>
+    <li>Elemento de lista no ordenada 1</li>
+    <li>Elemento de lista no ordenada 2</li>
+</ul>
+
+<ol>
+    <li>Elemento de lista ordenada 1</li>
+    <li>Elemento de lista ordenada 2</li>
+</ol>
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Tablas</h2>
+            <p>Las tablas organizan datos en filas y columnas.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de tabla -->
+<table>
+    <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+    </tr>
+    <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+    </tr>
+    <tr>
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+    </tr>
+</table>
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Formularios</h2>
+            <p>Los formularios en HTML permiten la interacción del usuario mediante el envío de datos.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de formulario -->
+<form action="/submit" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre">
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    
+    <input type="submit" value="Enviar">
+</form>
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Multimedia</h2>
+            <p>HTML permite la inserción de elementos multimedia como imágenes, videos y audio.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de multimedia -->
+<img src="imagen.jpg" alt="Descripción de la imagen">
+
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+</video>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+    Tu navegador no soporta la etiqueta de audio.
+</audio>
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Maquetación Semántica</h2>
+            <p>La maquetación semántica utiliza etiquetas HTML5 para definir la estructura y significado del contenido.</p>
+            <pre>
+<code class="language-html">
+<!-- Ejemplo de maquetación semántica -->
+<header>
+    <h1>Encabezado Principal</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Acerca de</a></li>
+    </ul>
+</nav>
+
+<article>
+    <h2>Título del Artículo</h2>
+    <p>Contenido del artículo.</p>
+</article>
+
+<footer>
+    <p>&copy; 2024 Mi Sitio Web</p>
+</footer>
+</code>
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Resumen de HTML y CSS - Curso 2023/2024</p>
+    </footer>
+</body>
+</html>
